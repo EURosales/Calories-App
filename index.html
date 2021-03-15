@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="shorcut icon" type="image/x-icon" href="img/icons/page_ico.ico" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calories counter App</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style_dark.css">
+    </head>
+
+    <body id="body">
+        <header>
+            <!--Barra de navegación-->
+            <div id="navbar" class="navbar">
+                <h1 id="title" class="titulo">The daily calories counter app</h1>
+                <button id="modeSelector" class="btn btn-dark"><span><img class="ico"
+                            src="img/icons/darkmode-ico.png"></span> Dark
+                    mode</button>
+            </div>
+        </header>
+
+        <div id="container-group" class="container-group">
+            <div id="container-left" class="container-left">
+                <div id="" class="info-container">
+                    <section id="">
+                        <h1 class="titulo-sm">What have you eaten today?</h1>
+                    </section>
+                    <article id="">
+                        <p id="" class="parrafo">If you want to know how many calories you have eaten today, make sure
+                            to
+                            select the food you have eaten today at every
+                            time of your day. The calories count will apear at the rigth side or in the top if you're
+                            using a smartphone.</p>
+                    </article>
+                </div>
+                <div id="food-container" class="food-container">
+                    <!--Imagenes de alimentos-->
+                    <h3 id="br-title" class="food-type-title">1# Breakfast, most important part of the day!</h3>
+                    <div class="breakfast-c container">
+
+                        <div class="ind-food-container unselected" id="cereal">
+                            <img class="food-img" src="img/breakfast/br1.jpg" alt="cereal">
+                            <p class="food-name">Cereal</p>
+                        </div>
+
+                        <div class="ind-food-container unselected" id="eggs">
+                            <img class="food-img" src="img/breakfast/br2.jpg" alt="eggs">
+                            <p class="food-name">Eggs</p>
+                        </div>
+
+                        <div class="ind-food-container unselected" id="toast">
+                            <img class="food-img" src="img/breakfast/br3.jpg" alt="toast">
+                            <p class="food-name">Toast</p>
+                        </div>
+                        <div class="ind-food-container unselected" id="juice-br">
+                            <img class="food-img" src="img/drinks/dr1.jpg" alt="juice">
+                            <p class="food-name">Juice</p>
+                        </div>
+
+                        <div class="ind-food-container unselected" id="coffee-br">
+                            <img class="food-img" src="img/drinks/dr3.jpg" alt="coffee">
+                            <p class="food-name">Coffee</p>
+                        </div>
+
+                        <div class="ind-food-container unselected" id="milk-br">
+                            <img class="food-img" src="img/drinks/dr5.jpg" alt="milk">
+                            <p class="food-name">Milk</p>
+                        </div>
+
+                        <div class="ind-food-container unselected" id="coldtea-br">
+                            <img class="food-img" src="img/drinks/dr4.jpg" alt="cold tea">
+                            <p class="food-name">Cold Tea</p>
+                        </div>
+
+                        <div class="ind-food-container unselected" id="water-br">
+                            <img class="food-img" src="img/drinks/dr8.jpg" alt="water">
+                            <p class="food-name">Water</p>
+                        </div>
+                        <div class="ind-food-container unselected" id="hottea-br">
+                            <img class="food-img" src="img/drinks/dr9.jpg" alt="hot tea">
+                            <p class="food-name">Hot tea</p>
+                        </div>
+                    </div>
+
+                    <h3 class="food-type-title">2# Lunch, must be easy to digest</h3>
+                    <div class="lunch-c container">
+
+                        <div id="pizza" class="ind-food-container unselected">
+                            <img class="food-img" src="img/lunch/lu1.jpg" alt="pizza">
+                            <p class="food-name">Pizza</p>
+                        </div>
+                        <div id="salad" class="ind-food-container unselected">
+                            <img class="food-img" src="img/lunch/lu2.jpg" alt="salad">
+                            <p class="food-name">Salad</p>
+                        </div>
+                        <div id="hamb" class="ind-food-container unselected">
+                            <img class="food-img" src="img/lunch/lu3.jpg" alt="hamburger">
+                            <p class="food-name">Hamburger</p>
+                        </div>
+                        <div id="juice-lu" class="ind-food-container unselected">
+                            <img class="food-img" src="img/drinks/dr1.jpg" alt="juice">
+                            <p class="food-name">Juice</p>
+                        </div>
+                        <div id="beer-lu" class="ind-food-container unselected">
+                            <img class="food-img" src="img/drinks/dr6.jpg" alt="beer">
+                            <p class="food-name">Beer</p>
+                        </div>
+                        <div class="ind-food-container unselected" id="coldtea-lu">
+                            <img class="food-img" src="img/drinks/dr4.jpg" alt="cold tea">
+                            <p class="food-name">Cold Tea</p>
+                        </div>
+                        <div id="soda-lu" class="ind-food-container unselected">
+                            <img class="food-img" src="img/drinks/dr2.jpg" alt="soda">
+                            <p class="food-name">Soda</p>
+                        </div>
+                        <div id="wine-lu" class="ind-food-container unselected">
+                            <img class="food-img" src="img/drinks/dr7.jpg" alt="wine">
+                            <p class="food-name">Wine</p>
+                        </div>
+                        <div class="ind-food-container unselected" id="water-lu">
+                            <img class="food-img" src="img/drinks/dr8.jpg" alt="water">
+                            <p class="food-name">Water</p>
+                        </div>
+                    </div>
+                    <h3 class="food-type-title">3# Dinner, is it light?</h3>
+                    <div class="dinner-c container">
+
+                        <div id="pasta" class="ind-food-container unselected">
+                            <img class="food-img" src="img/dinner/di1.jpg" alt="pasta">
+                            <p class="food-name">Pasta</p>
+                        </div>
+                        <div id="soup" class="ind-food-container unselected">
+                            <img class="food-img" src="img/dinner/di2.jpg" alt="soup">
+                            <p class="food-name">Soup</p>
+                        </div>
+                        <div id="shrimp" class="ind-food-container unselected">
+                            <img class="food-img" src="img/dinner/di3.jpg" alt="shrimp">
+                            <p class="food-name">Shrimp</p>
+                        </div>
+                        <div id="juice-di" class="ind-food-container unselected">
+                            <img class="food-img" src="img/drinks/dr1.jpg" alt="juice">
+                            <p class="food-name">Juice</p>
+                        </div>
+                        <div id="soda-di" class="ind-food-container unselected">
+                            <img class="food-img" src="img/drinks/dr2.jpg" alt="soda">
+                            <p class="food-name">Soda</p>
+                        </div>
+                        <div id="coffee-di" class="ind-food-container unselected">
+                            <img class="food-img" src="img/drinks/dr3.jpg" alt="coffee">
+                            <p class="food-name">Coffee</p>
+                        </div>
+                        <div id="wine-di" class="ind-food-container unselected">
+                            <img class="food-img" src="img/drinks/dr7.jpg" alt="wine">
+                            <p class="food-name">Wine</p>
+                        </div>
+
+                        <div id="coldtea-di" class="ind-food-container unselected">
+                            <img class="food-img" src="img/drinks/dr4.jpg" alt="cold tea">
+                            <p class="food-name">Cold tea</p>
+                        </div>
+                        <div id="milk-di" class="ind-food-container unselected">
+                            <img class="food-img" src="img/drinks/dr5.jpg" alt="milk">
+                            <p class="food-name">Milk</p>
+                        </div>
+                        <div id="beer-di" class="ind-food-container unselected">
+                            <img class="food-img" src="img/drinks/dr6.jpg" alt="beer">
+                            <p class="food-name">Beer</p>
+                        </div>
+                        <div id="water-di" class="ind-food-container unselected">
+                            <img class="food-img" src="img/drinks/dr8.jpg" alt="water">
+                            <p class="food-name">Water</p>
+                        </div>
+
+                    </div>
+                    <h3 class="food-type-title">4# Dessert, easy peasy as a piece of cake</h3>
+                    <div class="dessert-c container">
+
+                        <div id="cake" class="ind-food-container unselected">
+                            <img class="food-img" src="img/dessert/de1.jpg" alt="cake">
+                            <p class="food-name">Cake</p>
+                        </div>
+
+                        <div id="pie" class="ind-food-container unselected">
+                            <img class="food-img" src="img/dessert/de2.jpg" alt="pie">
+                            <p class="food-name">Pie</p>
+                        </div>
+
+                        <div id="macaroni" class="ind-food-container unselected">
+                            <img class="food-img" src="img/dessert/de3.jpg" alt="macaroni">
+                            <p class="food-name">macaroni</p>
+                        </div>
+
+                        <div id="juice-de" class="ind-food-container unselected">
+                            <img class="food-img" src="img/drinks/dr1.jpg" alt="juice">
+                            <p class="food-name">Juice</p>
+                        </div>
+
+                        <div id="soda-de" class="ind-food-container unselected">
+                            <img class="food-img" src="img/drinks/dr2.jpg" alt="soda">
+                            <p class="food-name">Soda</p>
+                        </div>
+
+                        <div id="coffee-de" class="ind-food-container unselected">
+                            <img class="food-img" src="img/drinks/dr3.jpg" alt="coffee">
+                            <p class="food-name">Coffee</p>
+                        </div>
+
+                        <div id="coldtea-de" class="ind-food-container unselected">
+                            <img class="food-img" src="img/drinks/dr4.jpg" alt="cold tea">
+                            <p class="food-name">Cold tea</p>
+                        </div>
+
+                        <div id="milk-de" class="ind-food-container unselected">
+                            <img class="food-img" src="img/drinks/dr5.jpg" alt="milk">
+                            <p class="food-name">Milk</p>
+                        </div>
+
+                        <div id="beer-de" class="ind-food-container unselected">
+                            <img class="food-img" src="img/drinks/dr6.jpg" alt="beer">
+                            <p class="food-name">Beer</p>
+                        </div>
+
+                        <div id="wine-de" class="ind-food-container unselected">
+                            <img class="food-img" src="img/drinks/dr7.jpg" alt="wine">
+                            <p class="food-name">Wine</p>
+                        </div>
+
+                        <div id="water-de" class="ind-food-container unselected">
+                            <img class="food-img" src="img/drinks/dr8.jpg" alt="water">
+                            <p class="food-name">Water</p>
+                        </div>
+
+                        <div id="hottea-de" class="ind-food-container unselected">
+                            <img class="food-img" src="img/drinks/dr9.jpg" alt="hot tea">
+                            <p class="food-name">Hot tea</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <aside>
+                <!--Aqui se mostrará la suma total de calorias-->
+                <div id="counter-view" class="counter-view">
+                    <h3>Today you have injest:</h3>
+                    <h3 class="calories" id="calories">0 Kcal</h3>
+                </div>
+
+            </aside>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+</html>
