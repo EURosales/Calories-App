@@ -43,37 +43,31 @@ span {
     transition: 0.1s;
     color: rgb(255, 255, 255);
     outline: none;
+    border: 3px solid #3a3c42;
 }
 
 .btn-light {
-    background-color: rgb(255, 182, 113);
+    background-color: #fc854e;
     transition: 0.1s;
     color: rgb(34, 34, 34);
     outline: none;
+    border: 3px solid #fc854e;
 }
 
 .btn-light:hover {
-    background-color: rgb(252, 133, 78);
     transition: 0.2s;
     transform: scale(1.03);
+    filter: brightness(1.3);
 }
 
 .btn-dark:hover {
-    background-color: rgb(116, 116, 116);
     transition: 0.2s;
     transform: scale(1.03);
+    filter: brightness(1.3);
 }
 
-/* .selected-light {
-    background: #ffffff;
-} */
-
-/* .selected-light.selected {
-    background: red;
-} */
-
 .selected-dark {
-    background: #00162b;
+    background: #002255;
 }
 
 .unselected {

@@ -46,6 +46,7 @@ function modeChecker() {
         btn.classList.add('btn-dark');
         btn.classList.remove('btn-light');
 
+        //Breakfast
         cereal.classList.toggle('selected-dark');
         eggs.classList.toggle('selected-dark');
         toast.classList.toggle('selected-dark');
@@ -55,6 +56,44 @@ function modeChecker() {
         hottea_br.classList.toggle('selected-dark');
         coffee_br.classList.toggle('selected-dark');
         coldtea_br.classList.toggle('selected-dark');
+
+        //lunch
+        pizza.classList.toggle('selected-dark');
+        salad.classList.toggle('selected-dark');
+        hamburger.classList.toggle('selected-dark');
+        juice_lu.classList.toggle('selected-dark');
+        beer_lu.classList.toggle('selected-dark');
+        coldtea_lu.classList.toggle('selected-dark');
+        soda_lu.classList.toggle('selected-dark');
+        wine_lu.classList.toggle('selected-dark');
+        water_lu.classList.toggle('selected-dark');
+
+        //dinner
+        pasta.classList.toggle('selected-dark');
+        soup.classList.toggle('selected-dark');
+        shrimp.classList.toggle('selected-dark');
+        juice_di.classList.toggle('selected-dark');
+        soda_di.classList.toggle('selected-dark');
+        coffee_di.classList.toggle('selected-dark');
+        wine_di.classList.toggle('selected-dark');
+        coldtea_di.classList.toggle('selected-dark');
+        milk_di.classList.toggle('selected-dark');
+        beer_di.classList.toggle('selected-dark');
+        water_di.classList.toggle('selected-dark');
+
+        //dessert
+        cake.classList.toggle('selected-dark');
+        pie.classList.toggle('selected-dark');
+        macaroni.classList.toggle('selected-dark');
+        juice_de.classList.toggle('selected-dark');
+        soda_de.classList.toggle('selected-dark');
+        coffee_de.classList.toggle('selected-dark');
+        wine_de.classList.toggle('selected-dark');
+        coldtea_de.classList.toggle('selected-dark');
+        milk_de.classList.toggle('selected-dark');
+        beer_de.classList.toggle('selected-dark');
+        water_de.classList.toggle('selected-dark');
+        hottea_de.classList.toggle('selected-dark');
     } else {
         activeDarkMode = true;
         body.classList.add('body-dark');
@@ -84,6 +123,44 @@ function modeChecker() {
         hottea_br.classList.toggle('selected-dark');
         coffee_br.classList.toggle('selected-dark');
         coldtea_br.classList.toggle('selected-dark');
+
+        //lunch
+        pizza.classList.toggle('selected-dark');
+        salad.classList.toggle('selected-dark');
+        hamburger.classList.toggle('selected-dark');
+        juice_lu.classList.toggle('selected-dark');
+        beer_lu.classList.toggle('selected-dark');
+        coldtea_lu.classList.toggle('selected-dark');
+        soda_lu.classList.toggle('selected-dark');
+        wine_lu.classList.toggle('selected-dark');
+        water_lu.classList.toggle('selected-dark');
+
+        //dinner
+        pasta.classList.toggle('selected-dark');
+        soup.classList.toggle('selected-dark');
+        shrimp.classList.toggle('selected-dark');
+        juice_di.classList.toggle('selected-dark');
+        soda_di.classList.toggle('selected-dark');
+        coffee_di.classList.toggle('selected-dark');
+        wine_di.classList.toggle('selected-dark');
+        coldtea_di.classList.toggle('selected-dark');
+        milk_di.classList.toggle('selected-dark');
+        beer_di.classList.toggle('selected-dark');
+        water_di.classList.toggle('selected-dark');
+
+        //dessert
+        cake.classList.toggle('selected-dark');
+        pie.classList.toggle('selected-dark');
+        macaroni.classList.toggle('selected-dark');
+        juice_de.classList.toggle('selected-dark');
+        soda_de.classList.toggle('selected-dark');
+        coffee_de.classList.toggle('selected-dark');
+        wine_de.classList.toggle('selected-dark');
+        coldtea_de.classList.toggle('selected-dark');
+        milk_de.classList.toggle('selected-dark');
+        beer_de.classList.toggle('selected-dark');
+        water_de.classList.toggle('selected-dark');
+        hottea_de.classList.toggle('selected-dark');
     }
 }
 
@@ -106,30 +183,13 @@ function comparer(object, object2) {
         Kcal -= object2.kcalValue;
     }
     calories.innerText = +Kcal + ' Kcal';
-    if (Kcal < 1000) {
+    if (Kcal < 1700) {
         calories.style.color = '#81b214';
-    } else if (Kcal > 999 && Kcal < 1800) {
+    } else if (Kcal > 1699 && Kcal < 2500) {
         calories.style.color = '#f0c929';
     } else {
         calories.style.color = '#e40017';
     }
-    //calories.style.color = '#438a5e';
-    // switch (calories) {
-    //     case calories.innerText < 1000:
-    //         calories.style.color = '#81b214';
-    //         break;
-    //     case calories.innerText > 999 && calories.innerText < 1800:
-    //         calories.style.color = '#f0c929';
-    //         //calories.innerText = +Kcal + ' Kcal';
-    //         break;
-    //     case calories.innerText > 1799:
-    //         calories.style.color = '#e40017';
-    //         //calories.innerText = +Kcal + ' Kcal';
-    //         break;
-    //     default:
-    //         calories.style.color = '#000';
-    //         break;
-    // }
 }
 
 //actions
@@ -182,165 +242,165 @@ water_br.addEventListener('click', function (e) {
 /*----------ALMUERZO---------- */
 
 pizza.addEventListener('click', function (e) {
-    comparer(Pizza);
+    comparer(pizza, Pizza);
     selectChecker(Pizza);
 });
 
 hamburger.addEventListener('click', function (e) {
-    comparer(hamburguesa);
+    comparer(hamburger, hamburguesa);
     selectChecker(hamburguesa);
 });
 
 salad.addEventListener('click', function (e) {
-    comparer(ensalada);
+    comparer(salad, ensalada);
     selectChecker(ensalada);
 });
 
 juice_lu.addEventListener('click', function (e) {
-    comparer(jugo_lu);
+    comparer(juice_lu, jugo_lu);
     selectChecker(jugo_lu);
 });
 
 wine_lu.addEventListener('click', function (e) {
-    comparer(vino_lu);
+    comparer(wine_lu, vino_lu);
     selectChecker(vino_lu);
 });
 
 soda_lu.addEventListener('click', function (e) {
-    comparer(sodapop_lu);
+    comparer(soda_lu, sodapop_lu);
     selectChecker(sodapop_lu);
 });
 
 coldtea_lu.addEventListener('click', function (e) {
-    comparer(tefrio_lu);
+    comparer(coldtea_lu, tefrio_lu);
     selectChecker(tefrio_lu);
 });
 
 beer_lu.addEventListener('click', function (e) {
-    comparer(cerveza_lu);
+    comparer(beer_lu, cerveza_lu);
     selectChecker(cerveza_lu);
 });
 
 water_lu.addEventListener('click', function (e) {
-    comparer(agua_lu);
+    comparer(water_lu, agua_lu);
     selectChecker(agua_lu);
 });
 
 /*----------CENA---------- */
 
 pasta.addEventListener('click', function (e) {
-    comparer(pastas);
+    comparer(pasta, pastas);
     selectChecker(pastas);
 });
 
 soup.addEventListener('click', function (e) {
-    comparer(sopa);
+    comparer(soup, sopa);
     selectChecker(sopa);
 });
 
 shrimp.addEventListener('click', function (e) {
-    comparer(mariscos);
+    comparer(shrimp, mariscos);
     selectChecker(mariscos);
 });
 
 juice_di.addEventListener('click', function (e) {
-    comparer(jugo_di);
+    comparer(juice_di, jugo_di);
     selectChecker(jugo_di);
 });
 
 wine_di.addEventListener('click', function (e) {
-    comparer(vino_di);
+    comparer(wine_di, vino_di);
     selectChecker(vino_di);
 });
 
 soda_di.addEventListener('click', function (e) {
-    comparer(sodapop_di);
+    comparer(soda_di, sodapop_di);
     selectChecker(sodapop_di);
 });
 
 coldtea_di.addEventListener('click', function (e) {
-    comparer(tefrio_di);
+    comparer(coldtea_di, tefrio_di);
     selectChecker(tefrio_di);
 });
 
 coffee_di.addEventListener('click', function (e) {
-    comparer(cafe_di);
+    comparer(coffee_di, cafe_di);
     selectChecker(cafe_di);
 });
 
 water_di.addEventListener('click', function (e) {
-    comparer(agua_di);
+    comparer(water_di, agua_di);
     selectChecker(agua_di);
 });
 
 beer_di.addEventListener('click', function (e) {
-    comparer(cerveza_di);
+    comparer(beer_di, cerveza_di);
     selectChecker(cerveza_di);
 });
 
 milk_di.addEventListener('click', function (e) {
-    comparer(leche_di);
+    comparer(milk_di, leche_di);
     selectChecker(leche_di);
 });
 
 /*----------CENA---------- */
 
 cake.addEventListener('click', function (e) {
-    comparer(pastel);
+    comparer(cake, pastel);
     selectChecker(pastel);
 });
 
 pie.addEventListener('click', function (e) {
-    comparer(pai);
+    comparer(pie, pai);
     selectChecker(pai);
 });
 
 macaroni.addEventListener('click', function (e) {
-    comparer(macarrones);
+    comparer(macaroni, macarrones);
     selectChecker(macarrones);
 });
 
 juice_de.addEventListener('click', function (e) {
-    comparer(jugo_de);
+    comparer(juice_de, jugo_de);
     selectChecker(jugo_de);
 });
 
 wine_de.addEventListener('click', function (e) {
-    comparer(vino_de);
+    comparer(wine_de, vino_de);
     selectChecker(vino_de);
 });
 
 soda_de.addEventListener('click', function (e) {
-    comparer(sodapop_de);
+    comparer(soda_de, sodapop_de);
     selectChecker(sodapop_de);
 });
 
 coldtea_de.addEventListener('click', function (e) {
-    comparer(tefrio_de);
+    comparer(coldtea_de, tefrio_de);
     selectChecker(tefrio_de);
 });
 
 coffee_de.addEventListener('click', function (e) {
-    comparer(cafe_de);
+    comparer(coffee_de, cafe_de);
     selectChecker(cafe_de);
 });
 
 water_de.addEventListener('click', function (e) {
-    comparer(agua_de);
+    comparer(water_de, agua_de);
     selectChecker(agua_de);
 });
 
 beer_de.addEventListener('click', function (e) {
-    comparer(cerveza_de);
+    comparer(beer_de, cerveza_de);
     selectChecker(cerveza_de);
 });
 
 milk_de.addEventListener('click', function (e) {
-    comparer(leche_de);
+    comparer(milk_de, leche_de);
     selectChecker(leche_de);
 });
 
 hottea_de.addEventListener('click', function (e) {
-    comparer(tecaliente_de);
+    comparer(hottea_de, tecaliente_de);
     selectChecker(tecaliente_de);
 });
