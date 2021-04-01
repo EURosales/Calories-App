@@ -8,7 +8,16 @@
 }
 
 .selected {
-    border: 1px solid black;
+    background-color: rgb(155, 155, 155);
+    transition: 0.3s;
+}
+
+.selected .food-img {
+    border: 5px solid #00b318;
+}
+
+.selected .food-name {
+    color: white !important;
 }
 
 body {
@@ -23,7 +32,6 @@ span {
 }
 
 .btn {
-    border: none; /* Remove borders */
     padding: 12px 16px; /* Some padding */
     font-size: 16px; /* Set a font size */
     cursor: pointer; /* Mouse pointer on hover */
@@ -32,40 +40,45 @@ span {
 
 .btn-dark {
     background-color: #3a3c42;
-    transition: 0.2s;
-    color: rgb(255, 255, 255); /* White text */
+    transition: 0.1s;
+    color: rgb(255, 255, 255);
+    outline: none;
 }
 
 .btn-light {
     background-color: rgb(255, 182, 113);
-    transition: 0.2s;
-    color: rgb(34, 34, 34); /* White text */
+    transition: 0.1s;
+    color: rgb(34, 34, 34);
+    outline: none;
 }
 
 .btn-light:hover {
     background-color: rgb(252, 133, 78);
     transition: 0.2s;
+    transform: scale(1.03);
 }
 
 .btn-dark:hover {
     background-color: rgb(116, 116, 116);
     transition: 0.2s;
+    transform: scale(1.03);
 }
 
-.selected-light {
-    background: #bbbbbb;
-}
+/* .selected-light {
+    background: #ffffff;
+} */
 
-.selected-light.selected {
+/* .selected-light.selected {
     background: red;
-}
+} */
 
 .selected-dark {
-    background: #8ac6ff;
+    background: #00162b;
 }
 
 .unselected {
     background: #ffffff;
+    transition: 0.3s;
 }
 
 .ico {
@@ -117,6 +130,9 @@ span {
 }
 
 .calories {
+    padding: 10px;
+    border-radius: 8px;
+    background: white;
     margin: 10px;
 }
 
@@ -143,7 +159,109 @@ span {
     text-align: center;
 }
 
-@media only screen and (min-width: 200px) {
+@media only screen and (max-width: 650px) {
+    .btn-dark,
+    .btn-light {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 310px) {
+    .food-type-title {
+        text-align: center;
+        margin: 10px 20px;
+        color: rgb(70, 70, 70);
+    }
+
+    .calories {
+        padding: 10px 20px;
+    }
+
+    .navbar {
+        /*border: 5px solid red;*/
+        background: #9ccd62;
+        border-radius: 10px;
+        padding: 8px;
+        margin: 8px auto;
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .titulo {
+        font-size: 30px;
+        text-align: center;
+        margin: 10px;
+        color: rgb(41, 41, 41);
+    }
+
+    .titulo-sm {
+        font-size: 20px;
+        text-align: center;
+        margin: 6px;
+    }
+
+    .parrafo {
+        /*border: 5px solid green;*/
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .container-group {
+        /*border: 5px solid rgb(135, 21, 228);*/
+        border-radius: 10px;
+        margin: 10px auto;
+        width: 98%;
+        display: flex;
+        background: #7c7c7c;
+        flex-direction: column-reverse;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12),
+            0 4px 4px rgba(0, 0, 0, 0.16), 0 8px 8px rgba(0, 0, 0, 0.2);
+        padding: 25px;
+    }
+
+    .container-left {
+        /*border: 5px solid rgb(43, 120, 221);*/
+        border-radius: 10px;
+        padding: 20px !important;
+        margin: 0px auto;
+        width: 100%;
+        background: #9ccd62;
+        color: rgb(41, 41, 41);
+    }
+
+    .food-container {
+        /*border: 5px solid rgb(221, 94, 43);*/
+        padding: 5px;
+        margin: 20px auto 0px auto;
+        border-radius: 10px;
+        max-height: 390px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        background: #f7f8e2;
+    }
+
+    .container {
+        padding: 5px;
+        /* display: grid !important;
+        gap: 0.5rem;
+        grid-template-columns: repeat(4, auto); */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    aside {
+        /*border: 5px solid yellow;*/
+        border-radius: 10px;
+        padding: 5px;
+        margin: auto auto 25px auto;
+        width: 70%;
+        text-align: center;
+    }
 }
 
 @media only screen and (min-width: 310px) {
